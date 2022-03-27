@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Shopping Cart</title>
+    <title>Development Shopping Cart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -20,7 +20,7 @@
   <body>
     <section>
       <div class="container">
-        <h2>My shopping cart</h2>
+        <h2>Shopping</h2>
         <div class="cart">
           <div class="col-md-12 col-lg-10 mx-auto">
             <div class="cart-item">
@@ -32,7 +32,7 @@
 
                 <div class="col-md-5 center-item">
                   <div class="input-group number-spinner">
-                    <button id="iphone-minus-button" class="btn btn-default">
+                    <button onclick="quantityUpDown('minus')" id="iphone-minus-button" class="btn btn-default">
                       <i class="fas fa-minus"></i>
                     </button>
                     <input
@@ -42,7 +42,7 @@
                       class="form-control text-center"
                       value="1"
                     />
-                    <button id="iphone-plus-button" class="btn btn-default">
+                    <button onclick="quantityUpDown('plus')" id="iphone-plus-button" class="btn btn-default">
                       <i class="fas fa-plus"></i>
                     </button>
                   </div>
@@ -104,6 +104,8 @@
         </div>
       </div>
     </section>
-    <script src="app.js"></script>
+  
+
+    <script src="main.js"></script>
   </body>
 </html>
